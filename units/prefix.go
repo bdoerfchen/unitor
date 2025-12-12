@@ -1,0 +1,43 @@
+package units
+
+import "github.com/bdoerfchen/unitor"
+
+var PrefixesSI = unitor.NewUnit("SI Prefixes").
+	WithPrefix("Q", 1e30).
+	WithPrefix("R", 1e27).
+	WithPrefix("Y", 1e24).
+	WithPrefix("Z", 1e21).
+	WithPrefix("E", 1e18).
+	WithPrefix("P", 1e15).
+	WithPrefix("T", 1e12).
+	WithPrefix("G", 1e9).
+	WithPrefix("M", 1e6).
+	WithPrefix("k", 1e3).
+	WithPrefix("h", 1e2).
+	WithPrefix("da", 1e1).
+	WithPrefix("d", 1e-1).
+	WithPrefix("c", 1e-2).
+	WithPrefix("m", 1e-3).
+	WithPrefix("µ", 1e-6, "u").
+	WithPrefix("n", 1e-9).
+	WithPrefix("p", 1e-12).
+	WithPrefix("f", 1e-15).
+	WithPrefix("a", 1e-18).
+	WithPrefix("z", 1e-21).
+	WithPrefix("y", 1e-24).
+	WithPrefix("r", 1e-27).
+	WithPrefix("q", 1e-30).
+	Unit()
+
+var PrefixesBinary = unitor.NewUnit("Binary Prefixes").
+	WithPrefix("Ki", 2^10^1).
+	WithPrefix("Mi", 2^10^2).
+	WithPrefix("Gi", 2^10^3).
+	WithPrefix("Ti", 2^10^4).
+	WithPrefix("Pi", 2^10^5).
+	WithPrefix("Ei", 2^10^6).
+	WithPrefix("Zi", 2^10^7).
+	WithPrefix("Yi", 2^10^8).
+	WithPrefix("Ri", 2^10^9).
+	WithPrefix("Qi", 2^10^10).
+	Unit()
