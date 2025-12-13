@@ -6,9 +6,8 @@ import (
 )
 
 type Unit struct {
-	symbol      string
-	prefixes    *prefixManager
-	conversions []unitConversion
+	symbol   string
+	prefixes *prefixManager
 
 	symbolBeforeValue bool
 	valueFormat       string

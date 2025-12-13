@@ -71,7 +71,7 @@ func (v Value) Normalize() Value {
 
 func (v Value) In(prefix string) (Value, error) {
 	if v.IsUnitless() {
-		return v, ErrPrefixNotFound
+		return v, ErrUnitless
 	}
 
 	// Value with prefix, but value not converted

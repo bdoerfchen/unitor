@@ -10,7 +10,6 @@ func NewUnit(symbol string) *UnitBuilder {
 	unit := &Unit{
 		symbol:            symbol,
 		prefixes:          NewPrefixes(),
-		conversions:       []unitConversion{},
 		valueFormat:       "%v",
 		symbolBeforeValue: false,
 	}
