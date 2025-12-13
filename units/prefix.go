@@ -1,6 +1,10 @@
 package units
 
-import "github.com/bdoerfchen/unitor"
+import (
+	"math"
+
+	"github.com/bdoerfchen/unitor"
+)
 
 var PrefixesSI = unitor.NewUnit("SI Prefixes").
 	WithPrefix("Q", 1e30).
@@ -30,14 +34,14 @@ var PrefixesSI = unitor.NewUnit("SI Prefixes").
 	Unit()
 
 var PrefixesBinary = unitor.NewUnit("Binary Prefixes").
-	WithPrefix("Ki", 2^10^1).
-	WithPrefix("Mi", 2^10^2).
-	WithPrefix("Gi", 2^10^3).
-	WithPrefix("Ti", 2^10^4).
-	WithPrefix("Pi", 2^10^5).
-	WithPrefix("Ei", 2^10^6).
-	WithPrefix("Zi", 2^10^7).
-	WithPrefix("Yi", 2^10^8).
-	WithPrefix("Ri", 2^10^9).
-	WithPrefix("Qi", 2^10^10).
+	WithPrefix("Ki", math.Pow(1024, 0)).
+	WithPrefix("Mi", math.Pow(1024, 2)).
+	WithPrefix("Gi", math.Pow(1024, 3)).
+	WithPrefix("Ti", math.Pow(1024, 4)).
+	WithPrefix("Pi", math.Pow(1024, 5)).
+	WithPrefix("Ei", math.Pow(1024, 6)).
+	WithPrefix("Zi", math.Pow(1024, 7)).
+	WithPrefix("Yi", math.Pow(1024, 8)).
+	WithPrefix("Ri", math.Pow(1024, 9)).
+	WithPrefix("Qi", math.Pow(1024, 10)).
 	Unit()
